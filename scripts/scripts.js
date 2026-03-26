@@ -137,15 +137,49 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Contact form (placeholder - needs EmailJS setup)
+    // EmailJS setup — replace these 3 values after signing up at emailjs.com
+    emailjs.init('YOUR_PUBLIC_KEY');  // TODO: replace with your EmailJS public key
+
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function (event) {
             event.preventDefault();
-            formStatus.textContent = 'Contact form not yet configured. Please reach out via email or LinkedIn.';
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+                formStatus.textContent = 'Please fill in all fields.';
+                formStatus.style.color = 'red';
+                return;
+            }
+
+            formStatus.textContent = 'Sending...';
             formStatus.style.color = '#666';
+
+            emailjs.send(
+                'YOUR_SERVICE_ID',    // TODO: replace with your EmailJS service ID
+                'YOUR_TEMPLATE_ID',   // TODO: replace with your EmailJS template ID
+                {
+                    from_name: name,
+                    from_email: email,
+                    message: message
+                }
+            ).then(
+                function () {
+                    formStatus.textContent = 'Message sent successfully! I will get back to you soon.';
+                    formStatus.style.color = 'green';
+                    contactForm.reset();
+                },
+                function (error) {
+                    formStatus.textContent = 'Failed to send. Please email me directly at naeemzainuddin5253@gmail.com';
+                    formStatus.style.color = 'red';
+                    console.error('EmailJS Error:', error);
+                }
+            );
         });
     }
 });

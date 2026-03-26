@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Naeem Zain Uddin - Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">Naeem Zain Uddin</div>
+
+        <!-- Desktop Menu -->
+        <nav class="desktop-nav">
+            <ul class="nav-list">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="nav-linkedin">
+                    <a href="https://www.linkedin.com/in/nz-515253han/" target="_blank" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <nav class="mobile-nav">
+            <ul class="nav-list">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="profile-image">
+                    <img src="assets/images/profile.jpg" alt="Naeem Zain Uddin"/>
+                </div>
+            </div>
+            <div class="hero-right">
+                <h1>Naeem Zain Uddin</h1>
+                <h2 class="hero-title"></h2>
+                <p class="hero-summary">
+                    Motivated <strong>Automation & Robotics Engineer</strong> with expertise in reinforcement learning, test automation, and embedded systems.
+                </p>
+                <p class="hero-summary">
+                    Pursuing Master's in <strong>Automation and Robotics</strong> at <strong>TU Dortmund University</strong>, specializing in:
+                    Reinforcement Learning - Autonomous Driving - ROS 2 - Test Automation
+                </p>
+                <p class="hero-summary">
+                    Recent: Finishing Master's thesis on <strong>Reinforcement Learning for Autonomous Valet Parking</strong> using PPO, ROS 2, and PyTorch with the Chronos Research Car.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#experience" class="cta-button">View Experience</a>
+                    <a href="#projects" class="cta-button secondary">See Projects</a>
+                    <a href="https://www.linkedin.com/in/nz-515253han/" target="_blank" class="cta-button linkedin-button" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/naeemzainuddin" target="_blank" class="cta-button secondary" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="summary" id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm <strong>Naeem Zain Uddin</strong>, an Automation & Robotics engineer with a passion for building intelligent systems that bridge software and hardware. My expertise spans <strong>reinforcement learning</strong>, <strong>test automation</strong>, <strong>embedded systems</strong>, and <strong>full-stack development</strong>.
+        </p>
+        <p>
+            During my time as a <strong>Werkstudent Software Validation</strong> at <strong>Kandou</strong> in Dortmund, I led the development of an Interop Automation framework for Intel/AMD benchmark testing, designing a web-based test execution platform with Python, Flask, SQL, and SSH-based remote execution across distributed lab environments.
+        </p>
+        <p>
+            At <strong>TUV Rheinland</strong>, I worked as a <strong>Werkstudent</strong> in Wireless Research, developing a fully automated Python-based testing framework for Zigbee and Matter CLI devices, replacing manual customer project validation with robust automation pipelines featuring serial control, dynamic command injection, and regex log parsing.
+        </p>
+        <p>
+            As a <strong>Wissenschaftlicher Hilfskraft (HiWi)</strong> at the <strong>Chair for Reliability Engineering</strong>, TU Dortmund, I developed a comprehensive benchmark catalogue of over 85 structured FEM simulation cases, architected MATLAB interfaces, and built Python-based validation tools for data correctness across simulation environments.
+        </p>
+        <p>
+            My Master's thesis at the <strong>Lehrstuhl fur Regelungssystemtechnik</strong> focuses on <strong>Reinforcement Learning for Autonomous Valet Parking</strong> with the Chronos Car, developing a PPO agent with a 14-component reward function, 7-stage training curriculum, and a hybrid NMPC baseline using CasADi/IPOPT achieving sub-centimeter precision, all within ROS 2 and PyTorch.
+        </p>
+
+        <h3 class="skills-title">Technical Skills</h3>
+        <div class="skills-categories">
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <ul class="skills-list">
+                    <li><span class="keyword-highlight-summary">Python</span></li>
+                    <li><span class="keyword-highlight-summary">C/C++</span></li>
+                    <li><span class="keyword-highlight-summary">MATLAB</span></li>
+                    <li><span class="keyword-highlight-summary">SQL</span></li>
+                    <li><span class="keyword-highlight-summary">Bash</span></li>
+                    <li><span class="keyword-highlight-summary">JavaScript</span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Robotics & Control</h4>
+                <ul class="skills-list">
+                    <li><span class="keyword-highlight-summary">ROS 2</span></li>
+                    <li><span class="keyword-highlight-summary">Gazebo</span></li>
+                    <li><span class="keyword-highlight-summary">MPC / NMPC</span></li>
+                    <li><span class="keyword-highlight-summary">CasADi / IPOPT</span></li>
+                    <li><span class="keyword-highlight-summary">Path Planning</span></li>
+                    <li><span class="keyword-highlight-summary">Sensor Fusion</span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>AI & Machine Learning</h4>
+                <ul class="skills-list">
+                    <li><span class="keyword-highlight-summary">PyTorch</span></li>
+                    <li><span class="keyword-highlight-summary">Reinforcement Learning (PPO)</span></li>
+                    <li><span class="keyword-highlight-summary">NVIDIA CUDA</span></li>
+                    <li><span class="keyword-highlight-summary">Signal Processing</span></li>
+                    <li><span class="keyword-highlight-summary">Image Processing</span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>DevOps & Tools</h4>
+                <ul class="skills-list">
+                    <li><span class="keyword-highlight-summary">Git / GitHub</span></li>
+                    <li><span class="keyword-highlight-summary">Docker</span></li>
+                    <li><span class="keyword-highlight-summary">Linux</span></li>
+                    <li><span class="keyword-highlight-summary">CI/CD</span></li>
+                    <li><span class="keyword-highlight-summary">Flask</span></li>
+                    <li><span class="keyword-highlight-summary">Streamlit</span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Hardware & Embedded</h4>
+                <ul class="skills-list">
+                    <li><span class="keyword-highlight-summary">Arduino</span></li>
+                    <li><span class="keyword-highlight-summary">Simulink</span></li>
+                    <li><span class="keyword-highlight-summary">LabVIEW</span></li>
+                    <li><span class="keyword-highlight-summary">SolidWorks</span></li>
+                    <li><span class="keyword-highlight-summary">PCB Design</span></li>
+                    <li><span class="keyword-highlight-summary">3D Printing</span></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Protocols & Communication</h4>
+                <ul class="skills-list">
+                    <li><span class="keyword-highlight-summary">Zigbee / Matter</span></li>
+                    <li><span class="keyword-highlight-summary">MQTT</span></li>
+                    <li><span class="keyword-highlight-summary">SSH</span></li>
+                    <li><span class="keyword-highlight-summary">Serial / UART</span></li>
+                    <li><span class="keyword-highlight-summary">RabbitMQ</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <div class="experience-grid">
+
+            <!-- Master Thesis -->
+            <div class="exp-card" id="expThesis">
+                <div class="exp-card-accent" style="background: var(--primary-color)"></div>
+                <div class="exp-card-body">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Master Arbeit</h3>
+                            <span class="company">Lehrstuhl fur Regelungssystemtechnik, TU Dortmund</span>
+                            <span class="date">Nov 2025 - Present</span>
+                        </div>
+                        <span class="exp-type">Full-time</span>
+                    </div>
+                    <p class="exp-summary">Reinforcement Learning for Autonomous Valet Parking with the Chronos Car.</p>
+                    <div class="card-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">ROS 2</span>
+                        <span class="tag">PPO</span>
+                        <span class="tag">CasADi</span>
+                        <span class="tag">CUDA</span>
+                        <span class="tag">Gazebo</span>
+                        <span class="tag">MOCAP</span>
+                    </div>
+                    <button class="explore-button" id="exploreButtonThesis">Read More</button>
+                </div>
+            </div>
+
+            <!-- Chair for Reliability Engineering -->
+            <div class="exp-card" id="expChair">
+                <div class="exp-card-accent" style="background: var(--chair-color)"></div>
+                <div class="exp-card-body">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Wissenschaftlicher Hilfskraft</h3>
+                            <span class="company">Chair for Reliability Engineering (CRE), TU Dortmund</span>
+                            <span class="date">Jun 2025 - Present</span>
+                        </div>
+                        <span class="exp-type">Work Study</span>
+                    </div>
+                    <p class="exp-summary">FEM benchmark catalogue, MATLAB interfaces, Python validation tools for simulation environments.</p>
+                    <div class="card-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">MATLAB</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">FEM</span>
+                        <span class="tag">YAML</span>
+                    </div>
+                    <button class="explore-button" id="exploreButtonChair">Read More</button>
+                </div>
+            </div>
+
+            <!-- TUV Rheinland -->
+            <div class="exp-card" id="expTuv">
+                <div class="exp-card-accent" style="background: var(--tuv-color)"></div>
+                <div class="exp-card-body">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Werkstudent Wireless-Forschung</h3>
+                            <span class="company">TUV Rheinland Group, Bochum</span>
+                            <span class="date">Apr 2025 - Present</span>
+                        </div>
+                        <span class="exp-type">Work Study</span>
+                    </div>
+                    <p class="exp-summary">Automated Python-based testing framework for Zigbee and Matter CLI devices in certified IoT laboratory.</p>
+                    <div class="card-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Zigbee</span>
+                        <span class="tag">Matter</span>
+                        <span class="tag">LabVIEW</span>
+                        <span class="tag">IoT</span>
+                    </div>
+                    <button class="explore-button" id="exploreButtonTuv">Read More</button>
+                </div>
+            </div>
+
+            <!-- Kandou -->
+            <div class="exp-card" id="expKandou">
+                <div class="exp-card-accent" style="background: var(--kandou-color)"></div>
+                <div class="exp-card-body">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Werkstudent Software Validation</h3>
+                            <span class="company">Kandou, Dortmund</span>
+                            <span class="date">Apr 2024 - Mar 2025</span>
+                        </div>
+                        <span class="exp-type">Work Study</span>
+                    </div>
+                    <p class="exp-summary">Interop Automation framework for Intel/AMD benchmark testing with web UI, SQL database, and SSH remote execution.</p>
+                    <div class="card-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">SSH</span>
+                        <span class="tag">MQTT</span>
+                        <span class="tag">CI/CD</span>
+                    </div>
+                    <button class="explore-button" id="exploreButtonKandou">Read More</button>
+                </div>
+            </div>
+
+            <!-- AKBER ALI -->
+            <div class="exp-card" id="expAkber">
+                <div class="exp-card-accent" style="background: var(--akber-color)"></div>
+                <div class="exp-card-body">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Maintenance Engineer</h3>
+                            <span class="company">Akber Ali & Sons, Karachi</span>
+                            <span class="date">Nov 2022 - Apr 2023</span>
+                        </div>
+                        <span class="exp-type">Full-time</span>
+                    </div>
+                    <p class="exp-summary">Assembly, maintenance, and diagnostics of lifting equipment from HYSTER, JLG, and RCM.</p>
+                    <div class="card-tags">
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">Electrical Wiring</span>
+                        <span class="tag">Diagnostics</span>
+                        <span class="tag">Mechanical Assembly</span>
+                    </div>
+                    <button class="explore-button" id="exploreButtonAkber">Read More</button>
+                </div>
+            </div>
+
+            <!-- Martin Dow -->
+            <div class="exp-card" id="expMartin">
+                <div class="exp-card-accent" style="background: #8e44ad"></div>
+                <div class="exp-card-body">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Engineer Intern</h3>
+                            <span class="company">Martin Dow Limited, Karachi</span>
+                            <span class="date">Jun 2022 - Jul 2022</span>
+                        </div>
+                        <span class="exp-type">Internship</span>
+                    </div>
+                    <p class="exp-summary">Pharmaceutical production processes, industrial automation with Siemens PLC, safety compliance.</p>
+                    <div class="card-tags">
+                        <span class="tag">PLC</span>
+                        <span class="tag">Process Automation</span>
+                        <span class="tag">Safety</span>
+                    </div>
+                    <button class="explore-button" id="exploreButtonMartin">Read More</button>
+                </div>
+            </div>
+
+            <!-- Master Motor -->
+            <div class="exp-card" id="expMotor">
+                <div class="exp-card-accent" style="background: #16a085"></div>
+                <div class="exp-card-body">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Quality Engineering Intern</h3>
+                            <span class="company">Master Motor, Karachi</span>
+                            <span class="date">Jul 2021 - Aug 2021</span>
+                        </div>
+                        <span class="exp-type">Internship</span>
+                    </div>
+                    <p class="exp-summary">3D modeling with SolidWorks, AutoCAD floorplans, quality inspection of Yutong buses.</p>
+                    <div class="card-tags">
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">AutoCAD</span>
+                        <span class="tag">Quality Assurance</span>
+                    </div>
+                    <button class="explore-button" id="exploreButtonMotor">Read More</button>
+                </div>
+            </div>
+
+            <!-- AK Brothers -->
+            <div class="exp-card" id="expAK">
+                <div class="exp-card-accent" style="background: #7f8c8d"></div>
+                <div class="exp-card-body">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Engineering Trainee</h3>
+                            <span class="company">AK Brothers, Karachi</span>
+                            <span class="date">Jun 2019 - Oct 2019</span>
+                        </div>
+                        <span class="exp-type">Apprenticeship</span>
+                    </div>
+                    <p class="exp-summary">Material and manufacturing processes, particularly related to dies and molds.</p>
+                    <div class="card-tags">
+                        <span class="tag">Manufacturing</span>
+                        <span class="tag">Dies & Molds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals (outside experience section for proper z-index) -->
+
+    <!-- Thesis Modal -->
+    <div class="modal" id="myModalThesis">
+        <div class="modal-content">
+            <span class="close" id="closeThesis">&times;</span>
+            <h2>Master Arbeit - Reinforcement Learning for Autonomous Valet Parking</h2>
+            <h3>Lehrstuhl fur Regelungssystemtechnik, TU Dortmund | Nov 2025 - Present</h3>
+            <ul>
+                <li>Developed an RL agent using PPO with a custom 14-component reward function and 7-stage training curriculum, achieving 90% success across randomized parking scenarios</li>
+                <li>Engineered a hybrid NMPC baseline using CasADi and IPOPT, eliminating replanning oscillations to achieve 100% success rate with sub-centimeter (2.28 cm) precision on fixed scenarios</li>
+                <li>Optimized policy inference to sub-millisecond computation times (&lt;1 ms), enabling 1,000+ Hz control frequencies for real-world deployment on a 1/28th scale autonomous platform using ROS 2 and MOCAP</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Chair Modal -->
+    <div class="modal" id="myModalChair">
+        <div class="modal-content">
+            <span class="close" id="closeChair">&times;</span>
+            <h2>Wissenschaftlicher Hilfskraft</h2>
+            <h3>Chair for Reliability Engineering (CRE), TU Dortmund | Jun 2025 - Present</h3>
+            <ul>
+                <li>Developed a comprehensive benchmark catalogue comprising over 85 structured simulation cases via YAML metadata, streamlining advanced parametric analysis for FEM research</li>
+                <li>Architected a seamless MATLAB interface and automated build scripts, eliminating manual setup and enabling high-throughput execution of complex PFEM programs</li>
+                <li>Built robust Python-based validation tools to rigorously verify complex input/output schemas, guaranteeing data correctness and integrity across all simulation environments</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TUV Modal -->
+    <div class="modal" id="myModalTuv">
+        <div class="modal-content">
+            <span class="close" id="closeTuv">&times;</span>
+            <h2>Werkstudent Wireless-Forschung</h2>
+            <h3>TUV Rheinland Group, Bochum | Apr 2025 - Present</h3>
+            <ul>
+                <li>Developed and implemented a fully automated Python-based testing framework for Zigbee and Matter CLI devices, replacing manual customer project validation to significantly reduce end-to-end execution times</li>
+                <li>Architected robust automation pipelines featuring serial control, dynamic command injection, and regex log parsing, successfully bridging software automation with physical wireless hardware (Matter, Zigbee, 4G, 5G)</li>
+                <li>Automated 300+ certification test cases for CSA Matter and Zigbee R23 protocols using Python and CLI</li>
+                <li>Frameworks actively used in production by TUV engineers to certify customer products for Zigbee and Matter compliance</li>
+                <li>Worked within a certified IoT testing laboratory environment with LabVIEW-based measurement systems</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Kandou Modal -->
+    <div class="modal" id="myModalKandou">
+        <div class="modal-content">
+            <span class="close" id="closeKandou">&times;</span>
+            <h2>Werkstudent Software Validation</h2>
+            <h3>Kandou, Dortmund | Apr 2024 - Mar 2025</h3>
+            <ul>
+                <li>Led the development of an Interop Automation framework for Intel and AMD benchmark testing, optimizing test cycles and execution efficiency</li>
+                <li>Designed and implemented a user interface to automate Intel Cscripts and AMD XIO test flows, removing the need for manual input</li>
+                <li>Built and maintained a centralized SQL database for dynamic test data storage and real-time result tracking</li>
+                <li>Developed scalable Python-based automation scripts with SSH integration for remote test execution</li>
+                <li>Integrated MQTT protocol for real-time result communication and monitoring across systems</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- AKBER ALI Modal -->
+    <div class="modal" id="myModalAkber">
+        <div class="modal-content">
+            <span class="close" id="closeAkber">&times;</span>
+            <h2>Maintenance Engineer</h2>
+            <h3>Akber Ali & Sons, Karachi | Nov 2022 - Apr 2023</h3>
+            <ul>
+                <li>Assembled and maintained lifting equipment from world-renowned brands such as HYSTER, JLG, and RCM</li>
+                <li>Diagnosed and resolved machine operation issues, specializing in the power card module of electric scissor lifts and forklifts within the JLG Electric series</li>
+                <li>Conducted a comprehensive overhaul of the wiring harness for a JCB Telehandler, including replacement of faulty components</li>
+                <li>Utilized technical documentation to ensure the completion of equipment maintenance and repair tasks</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Martin Dow Modal -->
+    <div class="modal" id="myModalMartin">
+        <div class="modal-content">
+            <span class="close" id="closeMartin">&times;</span>
+            <h2>Engineer Intern</h2>
+            <h3>Martin Dow Limited, Karachi | Jun 2022 - Jul 2022</h3>
+            <ul>
+                <li>Managed pharmaceutical production processes including granulation, blending, compression, coating, and testing to ensure product quality and consistency</li>
+                <li>Gained foundational experience in industrial automation by working with Siemens PLC for basic control systems, contributing to process optimization</li>
+                <li>Demonstrated commitment to safety and health compliance, with expertise in waste management, fire safety, and environmental testing protocols</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Master Motor Modal -->
+    <div class="modal" id="myModalMotor">
+        <div class="modal-content">
+            <span class="close" id="closeMotor">&times;</span>
+            <h2>Quality Engineering Intern</h2>
+            <h3>Master Motor, Karachi | Jul 2021 - Aug 2021</h3>
+            <ul>
+                <li>Designed a 3D model of the Axle for Yutong buses using SolidWorks, contributing to precise and efficient manufacturing processes</li>
+                <li>Created a detailed floorplan for pre-delivery inspections using AutoCAD, ensuring less waiting time for standby vehicles</li>
+                <li>Successfully inspected fifteen ZK6127HS buses to ensure defect-free production</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <h2>Education</h2>
+        <div class="education-cards">
+            <div class="education-card">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>M.Sc. Automation & Robotics</h3>
+                <span class="edu-institution">TU Dortmund University</span>
+                <span class="edu-date">Oct 2023 - May 2026 (expected)</span>
+                <p>Focus: Reinforcement Learning, Autonomous Systems, ROS 2, Model Predictive Control</p>
+                <p><strong>Thesis:</strong> Reinforcement Learning for Autonomous Valet Parking with the Chronos Car</p>
+            </div>
+            <div class="education-card">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>BE Mechatronics Engineering</h3>
+                <span class="edu-institution">SZABIST, Karachi</span>
+                <span class="edu-date">Aug 2018 - Sep 2022</span>
+                <p>GPA: 3.32 (German grade: 1.9) | Silver Medalist</p>
+                <p>Focus: Embedded Systems, Signal Processing, Control Systems, PCB Design, SolidWorks</p>
+                <p><strong>Thesis:</strong> Autonomous Guided Vehicle (AGV) - routing algorithms, Arduino control, camera-based object recognition</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Master Thesis -->
+            <div class="project-card featured">
+                <div class="project-badge">Master Thesis</div>
+                <h3>RL for Autonomous Valet Parking</h3>
+                <p>PPO agent for autonomous parking with the Chronos Research Car. 14-component reward function, 7-stage training curriculum, NMPC baseline with CasADi/IPOPT achieving sub-centimeter precision. ROS 2, PyTorch, Gazebo, MOCAP.</p>
+                <div class="card-tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">ROS 2</span>
+                    <span class="tag">PPO</span>
+                    <span class="tag">CasADi</span>
+                    <span class="tag">CUDA</span>
+                    <span class="tag">Gazebo</span>
+                </div>
+            </div>
+
+            <!-- Digital Twin -->
+            <div class="project-card featured">
+                <div class="project-badge">Team Lead</div>
+                <h3>Digital Twin for Electric Grids</h3>
+                <p>Designed and implemented a digital twin system for simulating power distribution grids under varying weather conditions. Built CIM-CGMES to PSDM converter, containerized architecture with Docker, RabbitMQ/Celery for concurrent simulations, and Streamlit frontend for grid selection and result visualization.</p>
+                <div class="card-tags">
+                    <span class="tag">Docker</span>
+                    <span class="tag">RabbitMQ</span>
+                    <span class="tag">Celery</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">SIMONA</span>
+                </div>
+            </div>
+
+            <!-- Bachelor Thesis -->
+            <div class="project-card">
+                <div class="project-badge">Bachelor Thesis</div>
+                <h3>Autonomous Guided Vehicle (AGV)</h3>
+                <p>Self-guided logistics system with scheduling and routing algorithms in Python, Arduino integration, real-time object recognition using webcam, and sensor-based automation for warehouse operations.</p>
+                <div class="card-tags">
+                    <span class="tag">Arduino</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Sensor Fusion</span>
+                </div>
+            </div>
+
+            <!-- IoT Test Automation -->
+            <div class="project-card">
+                <h3>IoT Certification Test Automation</h3>
+                <p>Automated 300+ IoT certification test cases for Zigbee, Thread, and Matter protocols. Python-based test framework with serial control and dynamic command injection, deployed in production at TUV Rheinland's certified IoT laboratory.</p>
+                <div class="card-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Zigbee</span>
+                    <span class="tag">Matter</span>
+                    <span class="tag">Test Automation</span>
+                </div>
+            </div>
+
+            <!-- SerDes Test Platform -->
+            <div class="project-card">
+                <h3>Interop Automation Platform</h3>
+                <p>Web-based test execution platform for Intel/AMD interoperability benchmarks at Kandou. Flask/SQL architecture with SSH remote execution, MQTT real-time monitoring, and CI/CD pipeline integration.</p>
+                <div class="card-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">MQTT</span>
+                    <span class="tag">SSH</span>
+                </div>
+            </div>
+
+            <!-- FEM Benchmark -->
+            <div class="project-card">
+                <h3>FEM Benchmark Catalog</h3>
+                <p>Comprehensive catalog of 87 FEM reference problems with YAML metadata and analytical solutions. MATLAB GUI for interactive parametric studies and mesh visualization. Python validation infrastructure for automated solver verification.</p>
+                <div class="card-tags">
+                    <span class="tag">MATLAB</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">FEM</span>
+                    <span class="tag">YAML</span>
+                </div>
+            </div>
+
+            <!-- CPR Machine -->
+            <div class="project-card">
+                <div class="project-badge">Published</div>
+                <h3>CPR for Medical Assistance</h3>
+                <p>Researched and designed a highly efficient CPR machine as Software Lead. Findings published in a peer-reviewed journal.</p>
+                <div class="card-tags">
+                    <span class="tag">Research</span>
+                    <span class="tag">Medical Devices</span>
+                    <span class="tag">Publication</span>
+                </div>
+            </div>
+
+            <!-- Fire Fighting Robot -->
+            <div class="project-card">
+                <h3>Fire Fighting Robot</h3>
+                <p>Programmed an autonomous robot with line-following, fire detection, and extinguishing capabilities.</p>
+                <div class="card-tags">
+                    <span class="tag">Arduino</span>
+                    <span class="tag">Robotics</span>
+                    <span class="tag">Sensors</span>
+                </div>
+            </div>
+
+            <!-- PID Control Lift -->
+            <div class="project-card">
+                <h3>PID Control Lift</h3>
+                <p>Designed a PID-controlled elevator system by integrating Arduino with MATLAB for real-time control tuning and response analysis.</p>
+                <div class="card-tags">
+                    <span class="tag">Arduino</span>
+                    <span class="tag">MATLAB</span>
+                    <span class="tag">PID Control</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates-section" id="certificates">
+        <h2>Certificates & Languages</h2>
+        <div class="certificates-grid">
+            <div class="cert-card">
+                <i class="fas fa-language cert-icon"></i>
+                <h4>German (B2/C1)</h4>
+                <p>Professional working proficiency</p>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-language cert-icon"></i>
+                <h4>English (C1)</h4>
+                <p>Full professional proficiency</p>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-language cert-icon"></i>
+                <h4>Urdu, Hindi (Native)</h4>
+                <p>Native speaker</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:naeemzainuddin5253@gmail.com">naeemzainuddin5253@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> +49 176 43277891</p>
+                <p><i class="fas fa-map-marker-alt"></i> Dortmund, Germany</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/nz-515253han/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/naeemzainuddin" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required/>
+                <input type="email" id="email" placeholder="Your Email" required/>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+                <p id="form-status"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Naeem Zain Uddin. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+</body>
+</html>

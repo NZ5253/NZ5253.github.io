@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // EmailJS setup — replace these 3 values after signing up at emailjs.com
-    emailjs.init('YOUR_PUBLIC_KEY');  // TODO: replace with your EmailJS public key
+    emailjs.init('kmc4Cm-1KXzN_Dgwd');
 
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
@@ -161,8 +161,8 @@ document.addEventListener('DOMContentLoaded', function () {
             formStatus.style.color = '#666';
 
             emailjs.send(
-                'YOUR_SERVICE_ID',    // TODO: replace with your EmailJS service ID
-                'YOUR_TEMPLATE_ID',   // TODO: replace with your EmailJS template ID
+                'service_bk40mm4',
+                'template_ew7a87w',
                 {
                     from_name: name,
                     from_email: email,

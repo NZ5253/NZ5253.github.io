@@ -494,6 +494,23 @@
     <section class="projects" id="projects">
         <h2>Projects</h2>
         <div class="projects-grid">
+            <!-- IL Pipeline -->
+            <div class="project-card featured">
+                <div class="project-badge">2026</div>
+                <h3>Imitation Learning Pipeline for Manipulation</h3>
+                <p>End-to-end ROS 2 pipeline for record-train-deploy on a Franka Panda: data logger records demonstrations through the teleop stream into a LeRobotDataset, training script supports both ACT and Diffusion Policy, inference node deploys the trained policy through the same controller the teleoperator drove. FastAPI layer exposes a REST + WebSocket surface for dataset, training, and policy lifecycle. ACT achieves 96 % closed-loop success on pick-and-place (48/50 rollouts) with an honest out-of-distribution stress test.</p>
+                <div class="card-tags">
+                    <span class="tag">ROS 2</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">ACT</span>
+                    <span class="tag">Diffusion Policy</span>
+                    <span class="tag">LeRobot</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">PyBullet</span>
+                </div>
+                <a href="https://github.com/NZ5253/ros2-il-pipeline" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+            </div>
+
             <!-- Master Thesis -->
             <div class="project-card featured">
                 <div class="project-badge">Master Thesis</div>
